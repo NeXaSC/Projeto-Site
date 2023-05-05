@@ -28,59 +28,43 @@
     <nav>
       <a href="#" class="logo">Nutrição em Foco</a>
         <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="home.html" class="active">Home</a></li>
           <li><a href="artigos.html">Artigos</a></li>
           <li><a href="sobre-nos.html">Sobre Nós</a></li>
           <li><a href="fale-com-a-nutri.html">Fale com a Nutri</a></li>
           <li><a href="especialidade-da-nutri.html">Especialidade da Nutri</a></li>
         </ul>
         <div class="burger">
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="line1 toggle"></div>
+          <div class="line2 toggle"></div>
+          <div class="line3 toggle"></div>
         </div>
       </nav>
   </header>
 
-<div class="slider">
+  <script src="./javascript/navbar.js"></script>
 
-  <div class="slides">
+  <div class="slider">
+    <div class="slides">
 
-    <input type="radio" name="radio-btn" id="radio1">
-    <input type="radio" name="radio-btn" id="radio2">
-    <input type="radio" name="radio-btn" id="radio3">
-
-    <div class="slide first">
-      <img src="./img/artigo1.jpg" alt="artigo1">
-    </div>
-    <div class="slide">
-      <img src="./img/artigo2.jpg" alt="artigo1">
-    </div>
-    <div class="slide">
-      <img src="./img/artigo3.jpg" alt="artigo1">
-    </div>
-
-    <div class="navigation-auto">
-
-      <div class="auto-btn1"></div>
-      <div class="auto-btn2"></div>
-      <div class="auto-btn3"></div>
-
-    </div>
-
+      <div class="slide">
+        <img src="./img/artigo1.jpg" alt="artigo1">
+      </div>
+      <div class="slide">
+        <img src="./img/artigo2.jpg" alt="artigo2">
+      </div>
+      <div class="slide">
+        <img src="./img/artigo3.jpg" alt="artigo3">
+      </div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
   </div>
 
-  <div class="manual-navigation">
+  <script src="./javascript/slideshow.js"></script>
 
-    <label for="radio1" class="manual-btn"></label>
-    <label for="radio2" class="manual-btn"></label>
-    <label for="radio3" class="manual-btn"></label>
-
-  </div>
-
-</div>
-
-<script src="./javascript/slideshow.js"></script>
 
 
 <div class="sidebar">
@@ -131,11 +115,11 @@
       <div class="footer-col">
         <h4>Links</h4>
         <ul>
-          <li><a href="#">Home</a></li>  
-          <li><a href="#">Artigos</a></li>  
-          <li><a href="#">Sobre Nós</a></li>  
-          <li><a href="#">Fale com a Nutri</a></li>  
-          <li><a href="#">Especialidade da Nutri</a></li>  
+          <li><a href="./home.html">Home</a></li>  
+          <li><a href="./artigos.html">Artigos</a></li>  
+          <li><a href="./sobre-nos.html">Sobre Nós</a></li>  
+          <li><a href="./fale-com-a-nutri.html">Fale com a Nutri</a></li>  
+          <li><a href="./especialidade-da-nutri.html">Especialidade da Nutri</a></li>  
         </ul>
       </div>
       <div class="footer-col">
