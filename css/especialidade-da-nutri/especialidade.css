@@ -1,0 +1,47 @@
+main {
+  max-width: 800px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.especialidade {
+  max-width: 350px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.especialidade img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.especialidade h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.especialidade p {
+  font-size: 1rem;
+  text-align: justify;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+  
+  .especialidade {
+    max-width: 100%;
+  }
+}
