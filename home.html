@@ -46,51 +46,124 @@
 
   <div class="slider">
     <div class="slides">
-
       <div class="slide">
+        <h2>Título do Artigo 1</h2>
         <img src="./img/artigo1.jpg" alt="artigo1">
       </div>
       <div class="slide">
+        <h2>Título do Artigo 2</h2>
         <img src="./img/artigo2.jpg" alt="artigo2">
       </div>
       <div class="slide">
+        <h2>Título do Artigo 3</h2>
         <img src="./img/artigo3.jpg" alt="artigo3">
       </div>
-      </div>
-      <div class="slider-controls">
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
-      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
   </div>
 
   <script src="./javascript/slideshow.js"></script>
 
-
-
-<div class="sidebar">
-  <h2>Calcule seu IMC</h2>
-  <p>Para calcular o Índice de Massa Corporal (IMC), basta dividir o peso pela altura ao quadrado. O resultado deve ser interpretado de acordo com os seguintes valores:</p>
-  <ul>
-    <li>IMC abaixo de 18,5: abaixo do peso ideal</li>
-    <li>IMC entre 18,5 e 24,9: peso normal</li>
-    <li>IMC entre 25 e 29,9: sobrepeso</li>
-    <li>IMC entre 30 e 34,9: obesidade grau 1</li>
-    <li>IMC entre 35 e 39,9: obesidade grau 2</li>
-    <li>IMC acima de 40: obesidade grau 3</li>
-  </ul>
-  <form>
-    <div>
-      <label for="altura">Altura (cm):</label>
-      <input type="number" id="altura" name="altura" required>
+    <div class="table-wrapper">
+      <h2 class="imc-table-title">Classificação do Índice de Massa Corporal (IMC)</h2>
+      <p class="imc-table-text">O IMC é uma medida que avalia o peso corporal em relação à altura. É uma ferramenta útil para avaliar o risco de problemas de saúde relacionados ao peso, como diabetes e doenças cardíacas. Confira abaixo a tabela de classificação do IMC:</p>
+      <table class="imc-table">
+      <table class="imc-table">
+        <thead>
+          <tr>
+            <th colspan="2">Classificação</th>
+            <th>IMC</th>
+            <th>Peso mínimo</th>
+            <th>Peso máximo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3" style="background-color: #8bc34a;">Baixo peso</td>
+            <td>Muito grave</td>
+            <td>&lt; 16</td>
+            <td colspan="2">-</td>
+          </tr>
+          <tr>
+            <td>Grave</td>
+            <td>16 - 16,9</td>
+            <td>46 kg</td>
+            <td>58 kg</td>
+          </tr>
+          <tr>
+            <td>Moderado</td>
+            <td>17 - 18,4</td>
+            <td>51 kg</td>
+            <td>64 kg</td>
+          </tr>
+          <tr>
+            <td rowspan="4" style="background-color: #ffc107;">Eutrofia</td>
+            <td>Normal</td>
+            <td>18,5 - 24,9</td>
+            <td>54 kg</td>
+            <td>72 kg</td>
+          </tr>
+          <tr>
+            <td>Sobrepeso</td>
+            <td>25 - 29,9</td>
+            <td>61 kg</td>
+            <td>81 kg</td>
+          </tr>
+          <tr>
+            <td>Obesidade Grau I</td>
+            <td>30 - 34,9</td>
+            <td>70 kg</td>
+            <td>94 kg</td>
+          </tr>
+          <tr>
+            <td>Obesidade Grau II</td>
+            <td>35 - 39,9</td>
+            <td>79 kg</td>
+            <td>106 kg</td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="background-color: #f44336;">Obesidade Grau III</td>
+            <td>Mórbida</td>
+            <td>40 - 49,9</td>
+            <td>91 kg</td>
+            <td>121 kg</td>
+          </tr>
+          <tr>
+            <td>Extrema</td>
+            <td>&gt;= 50</td>
+            <td>108 kg</td>
+            <td>143 kg</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div>
-      <label for="peso">Peso (kg):</label>
-      <input type="number" id="peso" name="peso" required>
+
+  
+    <h2 class="imc-calculate-title">Calculadora de Índice de Massa Corporal</h2>
+    <button id="toggle-imc-table">Mostrar Tabela do IMC</button>
+    <div class="sidebar" id="imc-sidebar" style="display:none">
+      <h2>Calcule seu IMC</h2>
+      <p>Para calcular o Índice de Massa Corporal (IMC), basta dividir o peso pela altura ao quadrado. O resultado deve ser 
+        interpretado de acordo com os seguintes valores:</p>
+      <form>
+        <div>
+          <label for="altura">Altura (cm):</label>
+          <input type="number" id="altura" name="altura" required>
+        </div>
+        <div>
+          <label for="peso">Peso (kg):</label>
+          <input type="number" id="peso" name="peso" required>
+        </div>
+        <button type="submit">Calcular</button>
+        <button type="reset">Limpar</button>
+      </form>
     </div>
-    <button type="submit">Calcular</button>
-    <button type="reset">Limpar</button>
-  </form>
-</div>
+
+  <script src="./javascript/imc.js"></script>
+
 
 
 <footer class="footer">
