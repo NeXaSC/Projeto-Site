@@ -1,0 +1,38 @@
+.article {
+    max-width: 800px;
+    margin: 150px auto;
+    padding: 20px;
+  }
+  
+  .article-title {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  }
+  
+  .article img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+  
+  .article-text {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .article {
+      padding: 10px;
+    }
+    
+    .article-title {
+      font-size: 2em;
+    }
+    
+    .article-text {
+      font-size: 1em;
+    }
+  }

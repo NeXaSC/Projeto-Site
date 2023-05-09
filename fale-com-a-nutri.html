@@ -12,13 +12,12 @@
 
     <link rel="stylesheet" href="./css/home/base.css">
     <link rel="stylesheet" href="./css/home/navbar.css">
-    <link rel="stylesheet" href="./css/sobre-nos/sobrenos.css">
     <link rel="stylesheet" href="./css/home/footer.css">
     <link rel="stylesheet" href="./css/fale-com-a-nutri/fale-com-a-nutri.css">
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-    <title>Nutrição em Foco</title>
+    <title>Fale com a Nutri</title>
     <link rel="icon" href="./img/logo.png">
 
 </head>
@@ -26,9 +25,9 @@
 
   <header>
     <nav>
-      <a href="#" class="logo">Nutrição em Foco</a>
+      <a href="./home.html" class="logo">Nutrição em Foco</a>
         <ul class="nav-links">
-          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="home.html">Home</a></li>
           <li><a href="artigos.html">Artigos</a></li>
           <li><a href="sobre-nos.html">Sobre Nós</a></li>
           <li><a href="fale-com-a-nutri.html">Fale com a Nutri</a></li>
@@ -44,44 +43,56 @@
 
   <script src="./javascript/navbar.js"></script>
 
-  <main class="fale-com-a-nutri">
-    <div class="fale-com-a-nutri-content">      
-            <section class="fale-com-a-nutri">
-                <div class="container">
-                  <h2>Fale com a Nutri</h2>
-                  <form>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-              
-                    <label for="fone">Telefone:</label>
-                    <input type="tel" id="fone" name="fone">
-              
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-              
-                    <label for="sexo">Sexo:</label>
-                    <select id="sexo" name="sexo">
-                      <option value="Masculino">Masculino</option>
-                      <option value="Feminino">Feminino</option>
-                      <option value="Outro">Outro</option>
-                    </select>
-                    <br>
-              
-                    <label for="cidade">Cidade:</label>
-                    <input type="text" id="cidade" name="cidade">
-              
-                    <label for="estado">Estado:</label>
-                    <input type="text" id="estado" name="estado">
-                    <br>
-              
-                    <textarea id="area-mensagem" name="area-mensagem" rows="5" required></textarea>
-              
-                    <button type="submit">Enviar</button>
-                  </form>
-                </div>
-            </section>                         
-    </div>    
-</main>
+
+
+  <form action="enviar.php" method="post">
+		<h2>Fale com a Nutri</h2>
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" required>
+
+		<label for="fone">Telefone:</label>
+		<input type="tel" id="fone" name="fone" required>
+
+		<label for="email">E-mail:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="sexo">Sexo:</label>
+		<select id="sexo" name="sexo" required>
+			<option value="">Selecione</option>
+			<option value="M">Masculino</option>
+			<option value="F">Feminino</option>
+			<option value="O">Outro</option>
+		</select>
+
+		<label for="cidade">Cidade:</label>
+		<input type="text" id="cidade" name="cidade" required>
+
+		<label for="estado">Estado:</label>
+		<input type="text" id="estado" name="estado" required>
+
+		<label for="area">Área da mensagem:</label>
+		<select id="area" name="area" required>
+			<option value="">Selecione</option>
+			<option value="Consulta">Consulta</option>
+			<option value="Dúvida">Dúvida</option>
+			<option value="Sugestão">Sugestão</option>
+			<option value="Outro">Outro</option>
+		</select>
+
+		<label for="mensagem">Mensagem:</label>
+		<textarea id="mensagem" name="mensagem" required></textarea>
+
+		<input type="submit" value="Enviar">
+	</form>
+
+  <h2>Localização</h2>
+  <p class="text">O consultório da nutricionista Suze Brito está localizado na Rua dos Sabiás, nº 123, no bairro Jardim das Flores, na cidade de 
+    São Luís. A região é de fácil acesso e possui diversas opções de transporte público, como ônibus e metrô. Além disso, 
+    o consultório fica próximo a restaurantes, padarias, farmácias e outros estabelecimentos comerciais, proporcionando mais 
+    comodidade aos pacientes.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127551.72003167482!2d-44.39945680273436!3d-2.509741299999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f69113c4587a5b%3A0xe85c69aa512f9ce0!2sConsult%C3%B3rio%20Nutricionista%20Suze%20Brito!5e0!3m2!1spt-BR!2sbr!4v1683594919035!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
   
 <footer class="footer">
   <div class="container">
